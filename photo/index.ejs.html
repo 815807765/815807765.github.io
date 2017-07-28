@@ -8,13 +8,37 @@
   <link rel="dns-prefetch" href="http://chenyiqiangs.com">
   <title>相册 | 鶸</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="Photos待续
+图片正在加载中…
+
+(function() {
+var loadScript = function(path) {
+var $script = document.createElement(&apos;script&apos;)
+document.getElementsByTagName(&apos;body&apos;)[0].appendChild($script)
+$script.setAttribute(&apos;s">
+<meta property="og:type" content="website">
 <meta property="og:title" content="相册">
-<meta property="og:url" content="http://chenyiqiangs.com/photo/index.html">
+<meta property="og:url" content="http://chenyiqiangs.com/photo/index.ejs.html">
 <meta property="og:site_name" content="鶸">
-<meta property="og:updated_time" content="2017-07-28T04:02:21.000Z">
+<meta property="og:description" content="Photos待续
+图片正在加载中…
+
+(function() {
+var loadScript = function(path) {
+var $script = document.createElement(&apos;script&apos;)
+document.getElementsByTagName(&apos;body&apos;)[0].appendChild($script)
+$script.setAttribute(&apos;s">
+<meta property="og:updated_time" content="2017-07-28T05:44:45.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="相册">
+<meta name="twitter:description" content="Photos待续
+图片正在加载中…
+
+(function() {
+var loadScript = function(path) {
+var $script = document.createElement(&apos;script&apos;)
+document.getElementsByTagName(&apos;body&apos;)[0].appendChild($script)
+$script.setAttribute(&apos;s">
   
     <link rel="alternative" href="/atom.xml" title="鶸" type="application/atom+xml">
   
@@ -65,10 +89,6 @@
     		
     			
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'photos')" href="javascript:void(0)">相册</a>
     			
             
     			
@@ -158,7 +178,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-undefined" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-photos" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -174,8 +194,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><link type="text/css" href="/fancybox/jquery.fancybox.css" rel="stylesheet"></p>
-<div class="instagram"><section class="archives album"><ul class="img-box-ul"></ul></section></div>
+        <p><link rel="stylesheet" href="./ins.css"></p>
+<p><div class="photos-btn-wrap"><br><a class="photos-btn active" href="javascript:void(0)" target="_blank" rel="external">Photos</a><br><a class="photos-btn" href="#">待续</a><br></div></p>
+<p><div class="instagram itemscope"><br><a href="https://www.instagram.com/lawlitewang20/" target="_blank" class="open-ins">图片正在加载中…</a><br></div></p>
+<script>
+(function() {
+var loadScript = function(path) {
+var $script = document.createElement('script')
+document.getElementsByTagName('body')[0].appendChild($script)
+$script.setAttribute('src', path)
+}
+setTimeout(function() {
+loadScript('./ins.js')
+}, 0)
+})()
+</script>
 
       
 
@@ -260,7 +293,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://chenyiqiangs.com/photo/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://chenyiqiangs.com/photo/index.ejs.html" alt="微信分享二维码">
     </div>
 </div>
 
@@ -346,29 +379,21 @@ Total <span id="busuanzi_value_site_pv"></span> views.
       
       
     
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 25%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 25%" q-on="click: openSlider(e, 'photos')"><a href="javascript:void(0)" q-class="active:photos">相册</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
       
         
       
-      <li style="width: 25%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
-        
-      
-      <li style="width: 25%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -468,7 +493,7 @@ Total <span id="busuanzi_value_site_pv"></span> views.
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">我&lt;br&gt;&lt;br&gt;秦始皇LOL&lt;br&gt;打钱</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">我&lt;br&gt;&lt;br&gt;秦始皇&lt;br&gt;&lt;br&gt;打钱</div>
   	  	
     	</section>
     
